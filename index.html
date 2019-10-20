@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Church</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		
+		<!-- Top Bar -->
+
+		<div class="top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col top_bar_content d-flex flex-row align-items-center justify-content-start">
+						<div class="event_timer">
+							<span>Next Big Event:</span>
+							<ul class="timer">
+								<li class="d-inline-flex">
+									<div id="day" class="timer_num">03</div>
+									<div class="timer_unit">Days</div>
+								</li>
+								<li class="d-inline-flex">
+									<div id="hour" class="timer_num">15</div>
+									<div class="timer_unit">Hours</div>
+								</li>
+								<li class="d-inline-flex">
+									<div id="minute" class="timer_num">45</div>
+									<div class="timer_unit">Minutes</div>
+								</li>
+								<li class="d-inline-flex">
+									<div id="second" class="timer_num">23</div>
+									<div class="timer_unit">Seconds</div>
+								</li>
+							</ul>
+						</div>
+						<div class="donations_button ml-auto">
+							<a href="#" id="send">Send Donations</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Content -->
+
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+
+							<!-- Logo -->
+							<img src="images2/logo.png" alt="" style="width: 7%;">
+							<div class="logo_container">
+								<div class="logo">
+									<a href="#">
+										<span>Sto. Niño de Tacloban Parish</span>
+										
+									</a>
+								</div>
+							</div>
+
+							<!-- Navigation and Search -->
+							<div class="header_nav_container ml-auto">
+								<nav class="main_nav">
+									<ul>
+										<li class="active"><a href="#">Home</a></li>
+										<li><a href="ministries.html">Ministries</a></li>
+										<li><a href="sermons.html">Sermons</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+								<div class="search">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="13px" height="14px">
+										<path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+									</svg>
+								</div>
+							</div>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header_search_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+								<form action="#" class="header_search_form">
+									<input type="search" class="search_input" placeholder="Search" required="required">
+									<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="20px" height="20px">
+											<path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+										</svg>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-center justify-content-center">
+		<div class="menu_content">
+			<div class="cross_1 d-flex flex-column align-items-center justify-content-center"><img src="images/cross_1.png" alt=""></div>
+			<form action="#" class="menu_search_form">
+				<input type="search" class="menu_search_input" placeholder="Search" required="required">
+				<button class="menu_search_button d-flex flex-column align-items-center justify-content-center">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="20px" height="20px">
+					<path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+				</svg>
+			</button>
+			</form>
+			<nav class="menu_nav">
+				<ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="ministries.html">Ministries</a></li>
+					<li><a href="sermons.html">Sermons</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images2/church.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<h2 id="home2"> Pagkaurusa ha am Mahal nga Simbahan</h2>
+						<h3 id="homeh3">" Reaching Out, Reflecting Christ, Renewing Lives. "</h3>
+						<h3 id="homeh3">" Bringing People Closer To Christ. "</h3>
+					</div>
+				</div>
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images2/church7.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<h3 class="text-dark font-weight-bold"> Mass Schedule Monday to Saturday:</h3>
+						<h4 class="text-dark"> 5:30am, 6:15am, 12nn and 5:00pm </h4><br>
+						<h3 class="text-dark font-weight-bold"> Sundays:</h3>
+						<h4 class="text-dark">5:00am, 6:30am, 8:00am, 9:30am, 11:00am</h4>
+						<h4 class="text-dark">5:00pm and 6:30pm</h4>
+					</div>
+				</div>
+
+				<!-- Home Slider Item -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images2/pope2.jpg)"></div>
+					<div class="home_slider_content text-center">
+						<h2  class="text-white font-weight-bold"> Incoming Events:</h2>
+						<img src="images2/nazarenoevents.png" style="width: 50%; opacity: .6;margin-left: auto;margin-right: auto;">
+
+					</div>
+				</div>
+
+			</div>
+
+			<div class="home_slider_nav d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt=""></div>
+		</div>
+	</div>
+
+	<!-- Intro -->
+
+	<div class="intro">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images2/logo.png" alt="" style="width: 8%;"></div>
+						<div class="section_title"><h2>Welcome to Sto. Niño de Tacloban Page</h2></div>
+						<div class="section_subtitle">Come Alive Through Christ… Reach Out and Serve!</div>
+					</div>
+				</div>
+			</div>
+			<div class="row intro_content">
+
+				<!-- Intro Text -->
+				<div class="col-lg-6">
+					<div class="intro_text">
+						<h4>History:</h4>
+						<p class="text-dark">Tacloban which came under the patronage of Dulce Nombre de Jesus was founded as a visita by the Jesuits under the jurisdiction of Palo in 1596. Sometime later, Tacloban was entrusted to the parish of Basey in Samar. It cannot yet be ascertained when Tacloban finally became a parish. Certainly, when Tacloban was made as the capital of the province of Leyte in 1768, it could have been a parish for quite a time already. That year Tacloban was turned over by the Jesuits to the Agustinians. In 1804 the secular clergy took over the parish which was later on handed to the Franciscans in 1843. Finally in 1990, the parish was given to the care of the secular clergy . . .</p>
+
+						<div class="button intro_button"><a href="#">Read More</a></div>
+					</div>
+				</div>
+
+				<!-- Intro Image -->
+
+				<div class="col-lg-6">
+					<div class="intro_image"><img src="images2/intro.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+
+	<div class="services">
+		<div class="services_background parallax-window" data-parallax="scroll" data-image-src="images2/main.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images/church_2.png" alt=""></div>
+						<div class="section_title"><h2>Worship Activities</h2></div>
+						<div class="section_subtitle">Worshipping Our Risen Savior!</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="services_text text-center"><p>For God so loved the world, that he gave his only begotten Son, that whosoever believeth on him should not perish, but have eternal life. For God loved the world so much that he gave his only Son, so that everyone who believes in him may not die but have eternal life.</p> <p>John 3:16</p></div>
+				</div>
+			</div>
+			<div class="row services_row">
+
+				<!-- Services Item -->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="services_item text-center">
+						<div class="services_image"><img src="images/services_1.png" alt=""></div>
+						<div class="services_title">Teaching</div>
+					</div>
+				</div>
+
+				<!-- Services Item -->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="services_item text-center">
+						<div class="services_image"><img src="images/services_2.png" alt=""></div>
+						<div class="services_title">Communion</div>
+					</div>
+				</div>
+
+				<!-- Services Item -->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="services_item text-center">
+						<div class="services_image"><img src="images/services_3.png" alt=""></div>
+						<div class="services_title">Confessions</div>
+					</div>
+				</div>
+
+				<!-- Services Item -->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="services_item text-center">
+						<div class="services_image"><img src="images/services_4.png" alt=""></div>
+						<div class="services_title">Sermons</div>
+					</div>
+				</div>
+
+				<!-- Services Item -->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="services_item text-center">
+						<div class="services_image"><img src="images/services_5.png" alt=""></div>
+						<div class="services_title">Daily Mass</div>
+					</div>
+				</div>
+
+				<!-- Services Item -->
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="services_item text-center">
+						<div class="services_image"><img src="images/services_6.png" alt=""></div>
+						<div class="services_title">Daily Prayers</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Sermon -->
+
+	<div class="sermon">
+		<div class="sermon_background" style="background-image:url(images/sermon.png)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images/church_3.png" alt=""></div>
+						<div class="section_title"><h2>Today's Sermon</h2></div>
+						<div class="section_subtitle">OCTOBER 18TH,2019</div>
+					</div>
+				</div>
+			</div>
+			<div class="row sermon_row">
+
+				<!-- Sermon Image -->
+				<div class="col-lg-6">
+					<div class="sermon_image"><img src="images2/sermon.jpg" alt=""></div>
+				</div>
+				
+				<!-- Sermon Content -->
+				<div class="col-lg-6">
+					<div class="sermon_content">
+						<div class="sermon_title">Feast of Saint Luke, evangelist</div>
+						<ul class="sermon_list">
+							<li>Sermon by: <a href="#">Rev. Jhon Brown</a></li>
+							<li>Lectionary: <a href="#">661</a>, <a href="#">Holy</a></li>
+							<li>Reading: <a href="#">1 2 TM 4:10-17B</a></li>
+						</ul>
+						<div class="sermon_text">
+							<p class="text-dark" >Beloved: enamored of the present world,
+								deserted me and went to Thessalonica,
+								Crescens to Galatia, and Titus to Dalmatia.
+								Luke is the only one with me.
+								Get Mark and bring him with you,
+								for he is helpful to me in the ministry.
+								I have sent Tychicus to Ephesus.
+								When you come, bring the cloak I left with Carpus in Troas,
+								the papyrus rolls, and especially the parchments.</p>
+
+								<p class="text-dark">Alexander the coppersmith did me a great deal of harm;
+								the Lord will repay him according to his deeds.
+								You too be on guard against him,
+								for he has strongly resisted our preaching.</p>
+
+							
+						</div>
+						<div class="button sermon_button"><a href="sermons.html">Read More</a></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Causes -->
+
+	<div class="causes">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images/church_4.png" alt=""></div>
+						<div class="section_title"><h2>Our Church's Social Causes & Activities</h2></div>
+						<div class="section_subtitle">We’Re Building The Family Of Faith.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="causes_slider_container">
+
+						<!-- Causes Slider -->
+						<div class="owl-carousel owl-theme causes_slider">
+
+							<!-- Causes Slider Item -->
+							<div class="owl-item text-center causes_item">
+								<div class="causes_item_image"><img src="images2/med.jpg" alt=""></div>
+								<div class="causes_item_title">Nutrition and Healthcare</div>
+								<div class="causes_item_text">
+									<h4>Ways to Give</h4>
+									<p class="text-dark">Individuals and families all over Leyte need healthcare. They work hard, but they may not have access to healthcare. Oftentimes, they have to choose between paying for a doctor visit or paying for groceries. Learn how you can give them hope.</p>
+								</div>
+							</div>
+
+							<!-- Causes Slider Item -->
+							<div class="owl-item text-center causes_item">
+								<div class="causes_item_image"><img src="images2/live.jpg" alt=""></div>
+								<div class="causes_item_title">Livelihood & Poverty Relief</div>
+								<div class="causes_item_text">
+									<h4>The Role of the Church in Poverty Alleviation</h4>
+									<p class="text-dark">The necessity of saving and providing for our children and ourselves in the future. This is part of the future-oriented nature required of all who answer to God.</p>
+									<p class="text-dark">The poor may always be with us, but therein lies both the challenge and the opportunity to demonstrate the power of the gospel.</p>
+								</div>
+							</div>
+
+							<!-- Causes Slider Item -->
+							<div class="owl-item text-center causes_item">
+								<div class="causes_item_image"><img src="images2/women.jpg" alt=""></div>
+								<div class="causes_item_title">Women & Children</div>
+								<div class="causes_item_text">
+									<h4>Stewardship:</h4>
+									<p class="text-dark">“Our God, from your sacred home you take care of orphans and protect widows.” Psalm 68:5, CEV."</p>
+									<p class="text-dark">James 1:27, ESV "Religion that is pure and undefiled before God the Father, is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world."</p>
+								</div>
+							</div>
+
+							<!-- Causes Slider Item -->
+							<div class="owl-item text-center causes_item">
+								<div class="causes_item_image"><img src="images2/rehab.jpg" alt=""></div>
+								<div class="causes_item_title">Disaster Response & Rehab</div>
+								<div class="causes_item_text">
+									<h4>" Give good to whom it is due " Proverbs 3:27, ESV </h4>
+									<p class="text-dark">What a wonderful opportunity we have to give of our substance to those who are suffering, to lighten their burdens and let them know that we care. And how grateful we are for partners of like mind who help us serve those in places we cannot reach on our own</p>
+								</div>
+							</div>
+
+							<!-- Causes Slider Item -->
+							<div class="owl-item text-center causes_item">
+								<div class="causes_item_image"><img src="images2/donors.jpg" alt=""></div>
+								<div class="causes_item_title">Donors</div>
+								<div class="causes_item_text">
+									<h4>Offerings & Thanks Giving:</h4>
+									<p class="text-dark">Providing a way for congregants to share your church’s cause with their friends, loved ones, and social networks, giving your campaigns the potential to go viral.</p>
+									<p class="text-dark">Collecting donor information and past giving details, to build strong, lasting relationships</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="causes_slider_nav causes_slider_prev trans_200 d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_l.png" alt=""></div>
+						<div class="causes_slider_nav causes_slider_next trans_200 d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Quote -->
+
+	<div class="quote">
+		<div class="quote_background parallax-window" data-parallax="scroll" data-image-src="images2/quote2.png" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images2/church_5.png" alt=""></div>
+						<div class="section_title"><h2>Bible Verse of the Day | Psalm 94:19‎</h2></div>
+						<div class="section_subtitle"> October, 19, 2019</div>
+					</div>
+				</div>
+			</div>
+			<div class="row quote_row">
+				<div class="col text-center">
+					<div class="quote_char"><img src="images/quote_char.png" alt=""></div>
+					<div class="quote_text">In the multitude of my thoughts within me your comforts delight my soul.  "</div>
+					<div class="quote_source">Psalm 94:19‎</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- News -->
+
+	<div class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images/church_6.png" alt=""></div>
+						<div class="section_title"><h2>Latest News & Updates</h2></div>
+						<div class="section_subtitle">Telling The Good News About Jesus.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row news_row">
+
+				<!-- News Item -->
+				<div class="col-lg-4 news_col">
+					<div class="news_item">
+						<div class="news_image">
+							<img src="images2/news_nazareno.jpg" alt="">
+							<div class="news_date d-flex flex-column align-items-center justify-content-center">
+								<div class="news_day">26</div>
+								<div class="news_month">Sept, 2019</div>
+							</div>
+						</div>
+						<div class="news_content">
+							<div class="news_title">Nuestro Padre Jesus Nazareno</div>
+							<div class="news_text">
+								<p class="text-dark">Devotees joined the dawn procession of Nuestro Padre Jesus Nazareno which happened earlier at 4:30 in the morning.The image was already transferred to Manlurip.Viva JESUS NAZARENO!</p>
+							</div>
+							<div class="news_link"><a href="blog.html">Read More</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- News Item -->
+				<div class="col-lg-4 news_col">
+					<div class="news_item">
+						<div class="news_image">
+							<img src="images2/news_fiesta.jpg" alt="" style="height: 390px; width: 400px;">
+							<div class="news_date d-flex flex-column align-items-center justify-content-center">
+								<div class="news_day">30</div>
+								<div class="news_month">June, 2019</div>
+							</div>
+						</div>
+						<div class="news_content">
+							<div class="news_title">Tacloban City marks 129th Sto. Niño fiesta</div>
+							<div class="news_text">
+								<p class="text-dark">Hundreds of devotees of Sto. Niño trooped to the Sto. Niño Church on June 30  for the 129th Sto. Niño de Tacloban fiesta.</p>
+								<p class="text-dark">Naval Bishop Emeritus Filomeno G. Bactol celebrated a Pontifical fiesta Mass at 9:30 a.m. concelebrated by bishops from Leyte and Samar..</p>
+							</div>
+							<div class="news_link"><a href="blog.html">Read More</a></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- News Item -->
+				<div class="col-lg-4 news_col">
+					<div class="news_item">
+						<div class="news_image">
+							<img src="images2/news_shrine.jpg" alt="" style="height: 390px; width: 600px;">
+							<div class="news_date d-flex flex-column align-items-center justify-content-center">
+								<div class="news_day">17</div>
+								<div class="news_month">April, 2019</div>
+							</div>
+						</div>
+						<div class="news_content">
+							<div class="news_title">Sto Niño Shrine in Tacloban undergoing repairs</div>
+							<div class="news_text">
+								<p class="text-dark">TACLOBAN CITY — One of the sequestered properties of the Marcoses here has been undergoing some facelift.</p>
+								<p class="text-dark">At least P10 million was set aside for the repair of the Santo Niño Shrine and Heritage Museum, a sprawling property built by former first lady Imelda Marcos from 1979 to 1981.</p>
+							</div>
+							<div class="news_link"><a href="blog.html">Read More</a></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Newsletter -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter_content d-flex flex-lg-row flex-column align-items-center justify-content-start">
+						<div class="newsletter_title">Subscribe to our newsletter</div>
+						<div class="newsletter_form_container ml-lg-auto">
+							<form action="#" id="newsletter_form" class="newsletter_form">
+								<input type="email" class="newsletter_input" placeholder="Your email" required="required">
+								<button id="newsletter_button" class="newsletter_button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_col">
+
+					<!-- Logo -->
+					<div class="logo_container">
+						<div class="logo">
+							<a href="#">
+								<h3>Sto. Niño de Tacloban</h3>
+								<img src="images2/logo.png" alt="" style="width: 10%;">
+							</a>
+						</div>
+					</div>
+					<div class="footer_social">
+						<ul>
+							<li><a href="https://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.pinterest.ph"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_col">
+					<div class="footer_links">
+						<div class="footer_title">Useful Links</div>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Donations</a></li>
+							<li><a href="sermons.html">Sermons</a></li>
+							<li><a href="#">Causes</a></li>
+							<li><a href="#">Quotes</a></li>
+							<li><a href="blog.html">News</a></li>
+							<li><a href="#">Event List</a></li>
+							<li><a href="ministries.html">Ministries</a></li>
+							<li><a href="#">Priests</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_col">
+					<div class="footer_contact">
+						<div class="footer_title">Contact Us</div>
+						<ul>
+							<li><span>Address: </span>Corner Real and Zamora Streets | Tacloban City, Leyte Province, Philippines</li>
+
+							<li class="footer_contact_phone">
+								<span>Phone: </span>
+								<div>
+									<div> +63 05 116 2368</div>
+									<div> +63 30 781 0460</div>
+								</div>
+							</li>
+							<li><span>Email: </span>stoninotac@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="copyright text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by: RMS |  Disclaimer: This is only for educational purposes and not for profit. The Page is only a temporary template this is still for Approval to finalize the WebPage .<i class="fa fa-heart-o" aria-hidden="true"></i></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

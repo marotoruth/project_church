@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sermons</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/sermons.css">
+<link rel="stylesheet" type="text/css" href="styles/sermons_responsive.css">
+<!-- <link rel="stylesheet" type="text/css" href="styles/main_styles.css"> -->
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		
+		<!-- Top Bar -->
+
+		<div class="top_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col top_bar_content d-flex flex-row align-items-center justify-content-start">
+						<div class="event_timer">
+							<span>Next Big Event:</span>
+							<ul class="timer">
+								<li class="d-inline-flex">
+									<div id="day" class="timer_num">03</div>
+									<div class="timer_unit">Days</div>
+								</li>
+								<li class="d-inline-flex">
+									<div id="hour" class="timer_num">15</div>
+									<div class="timer_unit">Hours</div>
+								</li>
+								<li class="d-inline-flex">
+									<div id="minute" class="timer_num">45</div>
+									<div class="timer_unit">Minutes</div>
+								</li>
+								<li class="d-inline-flex">
+									<div id="second" class="timer_num">23</div>
+									<div class="timer_unit">Seconds</div>
+								</li>
+							</ul>
+						</div>
+						<div class="donations_button ml-auto">
+							<a href="#" id="send">Send Donations</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Content -->
+
+		<div class="header_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+
+							<!-- Logo -->
+							<img src="images2/logo.png" alt="" style="width: 7%;">
+							<div class="logo_container">
+								<div class="logo">
+									<a href="#">
+										<span>Sto. Niño de Tacloban Parish</span>
+										
+									</a>
+								</div>
+							</div>
+							<!-- Navigation and Search -->
+							<div class="header_nav_container ml-auto">
+								<nav class="main_nav">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="ministries.html">Ministries</a></li>
+										<li class="active"><a href="#">Sermons</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</nav>
+								<div class="search">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="13px" height="14px">
+										<path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+									</svg>
+								</div>
+							</div>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header_search_container">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+								<form action="#" class="header_search_form">
+									<input type="search" class="search_input" placeholder="Search" required="required">
+									<button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="20px" height="20px">
+											<path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+										</svg>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-center justify-content-center">
+		<div class="menu_content">
+			<div class="cross_1 d-flex flex-column align-items-center justify-content-center"><img src="images/cross_1.png" alt=""></div>
+			<form action="#" class="menu_search_form">
+				<input type="search" class="menu_search_input" placeholder="Search" required="required">
+				<button class="menu_search_button d-flex flex-column align-items-center justify-content-center">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="20px" height="20px">
+					<path class="search_path" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#353535"/>
+				</svg>
+			</button>
+			</form>
+			<nav class="menu_nav">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="ministries.html">Ministries</a></li>
+					<li><a href="#">Sermons</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images2/church3.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_container">
+						<div class="home_content d-flex flex-row align-items-center justify-content-start">
+							<div class="home_title text-dark font-weight-bold">Sermons</div>
+							<div class="home_breadcrumbs ml-auto">
+								<ul class="breadcrumbs">
+									<li><a href="index.html">Home</a></li>
+									<li>Sermons</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Sermon -->
+
+	<div class="sermon">
+		<div class="sermon_background" style="background-image:url(images/sermon.png)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images/church_3.png" alt=""></div>
+						<div class="section_title"><h2>Today's Sermon</h2></div>
+						<div class="section_subtitle">OCTOBER 18TH,2019</div>
+					</div>
+				</div>
+			</div>
+			<div class="row sermon_row">
+
+				<!-- Sermon Image -->
+				<div class="col-lg-6">
+					<div class="sermon_image"><img src="images2/sermon.jpg" alt=""></div>
+				</div>
+				
+				<!-- Sermon Content -->
+				<div class="col-lg-6">
+					<div class="sermon_content">
+						<div class="sermon_title">Feast of Saint Luke, evangelist</div>
+						<ul class="sermon_list">
+							<li>Sermon by: <a href="#">Rev. Jhon Brown</a></li>
+							<li>Lectionary: <a href="#">661</a>, <a href="#">Holy</a></li>
+							<li>Date: <a href="#">OCTOBER 18TH, 2019</a></li>
+						</ul>
+						<div class="sermon_text">
+							<p class="text-dark" >Beloved: enamored of the present world,
+								deserted me and went to Thessalonica,
+								Crescens to Galatia, and Titus to Dalmatia.
+								Luke is the only one with me.
+								Get Mark and bring him with you,
+								for he is helpful to me in the ministry.
+								I have sent Tychicus to Ephesus.
+								When you come, bring the cloak I left with Carpus in Troas,
+								the papyrus rolls, and especially the parchments.</p>
+
+								<p class="text-dark">Alexander the coppersmith did me a great deal of harm;
+								the Lord will repay him according to his deeds.
+								You too be on guard against him,
+								for he has strongly resisted our preaching.</p>
+
+							
+						</div>
+						<div class="blog_link"><a href="#">Continue Reading</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Popular -->
+
+	<div class="popular">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container">
+						<div class="section_image"><img src="images/church_7.png" alt=""></div>
+						<div class="section_title"><h2>Daily Readings</h2></div>
+						<div class="section_subtitle">God loves us all</div>
+					</div>
+				</div>
+			</div>
+			<div class="row popular_row">
+
+				<!-- Popular Sermon -->
+				<div class="col-lg-6">
+					<div class="popular_item">
+						<div class="popular_image"><img src="images/popular_1.jpg" alt=" "></div>
+						<div class="sermon_content">
+							<div class="sermon_title"><a href="sermon_single.html">Feast of Saint Luke, evangelist</a></div>
+							<ul class="sermon_list">
+								<li>Sermon by: <a href="#">Rev. Jhon Brown</a></li>
+								<li>Lectionary: <a href="#"> 661</a>, <a href="#">Holy</a></li>
+								<li>Date: <a href="#">OCTOBER 18TH, 2019</a></li>
+							</ul>
+							<div class="sermon_text">
+								<p class="text-dark">Beloved:
+									enamored of the present world,
+									deserted me and went to Thessalonica,
+									Crescens to Galatia, and Titus to Dalmatia.
+									Luke is the only one with me.
+									Get Mark and bring him with you,
+									for he is helpful to me in the ministry.
+									I have sent Tychicus to Ephesus.
+									When you come, bring the cloak I left with Carpus in Troas,
+									the papyrus rolls, and especially the parchments..</p>
+
+								<p class="text-dark">Alexander the coppersmith did me a great deal of harm;
+									the Lord will repay him according to his deeds.
+									You too be on guard against him,
+									for he has strongly resisted our preaching.</p>	
+							</div>
+							<div class="blog_link"><a href="#">Continue Reading</a></div>
+							<div class="sermon_buttons">
+								<ul>
+									<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Sermon -->
+				<div class="col-lg-6">
+					<div class="popular_item">
+						<div class="popular_image"><img src="images2/sermon_pope.jpg" alt=" " style="width: 500px; height: 405px;"></div>
+						<div class="sermon_content">
+							<div class="sermon_title"><a href="sermon_single.html">Memorial of Saint Ignatius of Antioch, Bishop and Martyr</a></div>
+							<ul class="sermon_list">
+								<li>Sermon by: <a href="#">Most Rev. Mathew B. Owen</a></li>
+								<li>Lectionary: <a href="#">470</a>, <a href="#">Holy</a></li>
+								<li>Date: <a href="#">OCTOBER 17TH,2019</a></li>
+							</ul>
+							<div class="sermon_text">
+								<p class="text-dark">Reading 1 ROM 3:21-30</p>
+								<p class="text-dark">Brothers and sisters:
+									Now the righteousness of God has been manifested apart from the law,
+									though testified to by the law and the prophets,
+									the righteousness of God through faith in Jesus Christ
+									for all who believe.
+									For there is no distinction;
+									all have sinned and are deprived of the glory of God.
+									They are justified freely by his grace
+									through the redemption in Christ Jesus,
+									whom God set forth as an expiation.</p>
+							</div>
+								<div class="blog_link"><a href="#">Continue Reading</a></div>
+							<div class="sermon_buttons">
+								<ul>
+									<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Sermon -->
+				<div class="col-lg-6">
+					<div class="popular_item">
+						<div class="popular_image"><img src="images2/sermon_bible.jpg" alt=" " style="height: 400px; width: 600px;"></div>
+						<div class="sermon_content">
+							<div class="sermon_title"><a href="sermon_single.html">Wednesday of the Twenty-eighth Week in Ordinary Time</a></div>
+							<ul class="sermon_list">
+								<li>Sermon by: <a href="#">Rev. Fr. Richard Grey</a></li>
+								<li>Lectionary: <a href="#">469</a>, <a href="#">Holy</a></li>
+								<li>Date: <a href="#">OCTOBER 16TH,2019</a></li>
+							</ul>
+							<div class="sermon_text">
+								<p class="text-dark">Reading 1 ROM 2:1-11</p>
+								<p class="text-dark">You, O man, are without excuse, every one of you who passes judgment.
+									For by the standard by which you judge another you condemn yourself,
+									since you, the judge, do the very same things.
+									We know that the judgment of God on those who do such things is true.
+									Do you suppose, then, you who judge those who engage in such things
+									and yet do them yourself,.</p>
+							</div>
+							<div class="blog_link"><a href="#">Continue Reading</a></div>
+							<div class="sermon_buttons">
+								<ul>
+									<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Sermon -->
+				<div class="col-lg-6">
+					<div class="popular_item">
+						<div class="popular_image"><img src="images2/sermon_child.png" alt=" " style="height: 400px;"></div>
+						<div class="sermon_content">
+							<div class="sermon_title"><a href="sermon_single.html">Memorial of Saint Teresa of Jesus, Virgin and Doctor of the Church</a></div>
+							<ul class="sermon_list">
+								<li>Sermon by: <a href="#">Rev.Fr. Mike Curtis</a></li>
+								<li>Lectionary:  <a href="#">468</a>, <a href="#">Holy</a></li>
+								<li>Date: <a href="#">OCTOBER 15TH,2019</a></li>
+							</ul>
+							<div class="sermon_text">
+								<p class="text-dark">Reading 1 ROM 1:16-25</p>
+								<p class="text-dark">I am not ashamed of the Gospel.
+									It is the power of God for the salvation of everyone who believes:
+									for Jew first, and then Greek.
+									For in it is revealed the righteousness of God from faith to faith;
+									as it is written, "The one who is righteous by faith will live."
+
+									The wrath of God is indeed being revealed from heaven
+									against every impiety and wickedness..</p>
+							</div>
+								<div class="blog_link"><a href="#">Continue Reading</a></div>
+							<div class="sermon_buttons">
+								<ul>
+									<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Featured -->
+
+	<div class="featured">
+		<div class="container-fluid">
+			<div class="row">
+
+				<!-- Featured 1 -->
+				<div class="col-lg-6 featured_col">
+					<div class="featured_background parallax-window" data-parallax="scroll" data-image-src="images/featured_1.jpg" data-speed="0.8"></div>
+					<div class="featured_1">
+						<div class="sermon_content">
+							<div class="sermon_title">Tuesday of the Twenty-seventh Week in Ordinary Time</div>
+							<ul class="sermon_list">
+								<li>Sermon by: <a href="#">Most Rev. Jhon Smith</a></li>
+								<li>Lectionary: <a href="#">462</a>, <a href="#">Holy</a></li>
+								<li>Date: <a href="#">OCTOBER 8TH,2019</a></li>
+							</ul>
+							<div class="sermon_text">
+								<p>Reading 1 JON 3:1-10</p>
+								<p>The word of the LORD came to Jonah a second time:
+									"Set out for the great city of Nineveh,
+									and announce to it the message that I will tell you."
+									So Jonah made ready and went to Nineveh,
+									according to the LORD's bidding.
+									Now Nineveh was an enormously large city;
+									it took three days to go through it . . </p>
+							</div> 
+							<div class="blog_link"><a href="#">Continue Reading</a></div>
+							<div class="sermon_buttons">
+								<ul>
+									<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Featured 2 -->
+				<div class="col-lg-6 featured_col">
+					<div class="featured_background parallax-window" data-parallax="scroll" data-image-src="images/featured_2.jpg" data-speed="0.8"></div>
+					<div class="featured_2">
+						<div class="sermon_content">
+							<div class="sermon_title">Memorial of Our Lady of the Rosary</div>
+							<ul class="sermon_list">
+								<li>Sermon by: <a href="#">Most Rev. Mathew B. Owen</a></li>
+								<li>Lectionary:  <a href="#">461</a>, <a href="#">Holy</a></li>
+								<li>Date: <a href="#">OCTOBER 7TH,2019</a></li>
+							</ul>
+							<div class="sermon_text">
+								<p>Reading 1 JON 1:1–2:1-2, 11</p>
+								<p>This is the word of the LORD that came to Jonah, son of Amittai:
+									"Set out for the great city of Nineveh, and preach against it;
+									their wickedness has come up before me."
+									But Jonah made ready to flee to Tarshish away from the LORD.
+									He went down to Joppa, found a ship going to Tarshish,
+									paid the fare, and went aboard to journey with them to Tarshish,
+									away from the LORD . .</p>
+									
+							</div>
+							<div class="blog_link"><a href="#">Continue Reading</a></div>
+							<div class="sermon_buttons">
+								<ul>
+									<li class="sermon_item"><img class="svg" src="images/sermon_1.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_2.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_3.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_4.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_5.svg" alt=""></li>
+									<li class="sermon_item"><img class="svg" src="images/sermon_6.svg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Newsletter -->
+
+	<div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter_content d-flex flex-lg-row flex-column align-items-center justify-content-start">
+						<div class="newsletter_title">Subscribe to our newsletter</div>
+						<div class="newsletter_form_container ml-lg-auto">
+							<form action="#" id="newsletter_form" class="newsletter_form">
+								<input type="email" class="newsletter_input" placeholder="Your email" required="required">
+								<button id="newsletter_button" class="newsletter_button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_col">
+
+					<!-- Logo -->
+					<div class="logo_container">
+						<div class="logo">
+							<a href="#">
+								<h3>Sto. Niño de Tacloban</h3>
+								<img src="images2/logo.png" alt="" style="width: 10%;">
+							</a>
+						</div>
+					</div>
+					<div class="footer_social">
+						<ul>
+							<li><a href="https://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.pinterest.ph"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-4 footer_col">
+					<div class="footer_links">
+						<div class="footer_title">Useful Links</div>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Donations</a></li>
+							<li><a href="sermons.html">Sermons</a></li>
+							<li><a href="#">Causes</a></li>
+							<li><a href="#">Quotes</a></li>
+							<li><a href="blog.html">News</a></li>
+							<li><a href="#">Event List</a></li>
+							<li><a href="ministries.html">Ministries</a></li>
+							<li><a href="#">Priests</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Footer Column -->
+				<div class="col-lg-3 footer_col">
+					<div class="footer_contact">
+						<div class="footer_title">Contact Us</div>
+						<ul>
+							<li><span>Address: </span>Corner Real and Zamora Streets | Tacloban City, Leyte Province, Philippines</li>
+
+							<li class="footer_contact_phone">
+								<span>Phone: </span>
+								<div>
+									<div> +63 05 116 2368</div>
+									<div> +63 30 781 0460</div>
+								</div>
+							</li>
+							<li><span>Email: </span>stoninotac@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="copyright text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by: RMS |  Disclaimer: This is only for educational purposes and not for profit. The Page is only a temporary template this is still for Approval to finalize the WebPage .<i class="fa fa-heart-o" aria-hidden="true"></i></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/sermons_custom.js"></script>
+</body>
+</html>
